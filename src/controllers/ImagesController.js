@@ -6,7 +6,7 @@ module.exports = {
 
         const gdrive = require('../../gdrive.js');
 
-        gdrive.imageUpload('imagem', 'imagem', (id) => {
+        gdrive.imageUpload('imagem', 'imagem.jpg', (id) => {
             const idImage = id;
 
             return response.json({ idImage });
